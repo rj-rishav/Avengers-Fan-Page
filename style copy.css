@@ -1,0 +1,189 @@
+@import url(https://db.onlinewebfonts.com/c/1c034a3c79b7bb221891bf22588b450d?family=Avengeance+Heroic+Avenger+Normal);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
+    font-family: "Avengeance Heroic Avenger Normal";
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #e0e055;
+    border-radius: 30px;
+}
+:root {
+    --page-height: calc(100vh - 4rem);
+}
+html {
+    scroll-behavior: smooth;
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height-step: 10px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+header {
+    position: fixed;
+    z-index: 5;
+    background-color: #151515;
+    top: 2rem;
+    margin-left: 2rem;
+    width: calc(100% - 6rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 4rem;
+    border-radius: 100px;
+}
+#nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+#navi {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 2.5rem;
+}
+#nav-links ul li {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+#logo img {
+    width: 11rem;
+}
+#landing-page {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    margin-top: 4rem;
+}
+#hero-img {
+    width: 100%;
+}
+/* Second Page */
+#second-page {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    margin-top: 4rem;
+    height: var(--page-height);
+}
+#gif-section img {
+    width: 75%;
+    height: 70%;
+    border: 3px solid #e0e055;
+    border-radius: 100px;
+}
+
+/* Third Page */
+#third-page {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    margin-top: 4rem;
+    height: var(--page-height);
+}
+#nick-img {
+    width: 85%;
+    height: 80%;
+    border: 3px solid #e0e055;
+    border-radius: 100px;
+    animation: nick 12s infinite linear;
+}
+@keyframes nick {
+    0% {
+        background-image: url(./images/nick1.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    45% {
+        background-image: url(./images/nick3.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    100% {
+        background-image: url(./images/nick1.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* 4th Page */
+
+#forth-page {
+    /* height: 100vh; */
+    padding-top: 15rem; 
+    margin: 0 20rem;
+}
+#heros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 5rem;
+}
+.hero-cards {
+    cursor: pointer;
+    width: 20rem;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1;
+}
+.hero-cards:hover {
+    scale: 1.1;
+    border: 3px solid #e0e055;
+
+}
+.hero-cards h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.hero-cards img {
+    width: 100%;
+    height: 80%;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+
+}
+
+/* Footer */
+footer {
+    background-color: #151515;
+    padding: 1rem 0;
+    display: flex;
+    gap: 10rem;
+}
+#footLogo {
+    margin-left: 35%;
+
+}
+#footLogo img{
+    height: 8rem;
+    margin-top: 2rem;
+}
+#social-links a img {
+    height: 2.5rem;
+    display: inline-flex;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+

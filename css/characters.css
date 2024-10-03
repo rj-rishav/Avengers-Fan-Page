@@ -1,0 +1,152 @@
+@import url(https://db.onlinewebfonts.com/c/1c034a3c79b7bb221891bf22588b450d?family=Avengeance+Heroic+Avenger+Normal);
+
+/* Common CSS */
+
+.min-h {
+  min-height: 100vh;
+  padding: 0 5rem;
+}
+
+.flex-cent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-div {
+  display: flex;
+  gap: 3rem;
+}
+
+.inner-div img {
+  height: 60vh;
+}
+
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e0e055;
+  border-radius: 30px;
+}
+
+:root {
+  --page-height: calc(100vh - 7rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: transparent;
+  color: #fff;
+  line-height-step: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Avengeance Heroic Avenger Normal";
+}
+
+ul {
+  list-style: none;
+}
+
+.img-border {
+  border: 3px solid #e0e055;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: "Avengeance Heroic Avenger Normal";
+}
+
+header {
+  position: fixed;
+  z-index: 5;
+  background-color: #151515;
+  top: 2rem;
+  margin-left: 2rem;
+  width: calc(100% - 6rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 4rem;
+  border-radius: 100px;
+}
+
+#nav-links ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+#navi {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 2.5rem;
+}
+
+#nav-links ul li {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+#logo img {
+  width: 11rem;
+}
+.hero-details {
+  padding-top: 5rem;
+}
+
+/* 1st page */
+
+#ca {
+  background-color: #40c0f7;
+}
+
+/* 2nd Page */
+
+#th {
+  background-color: #E55E5B;
+}
+
+/* 3rd Page */
+
+#hk {
+  background-color: #87dc72;
+}
+
+/* 4th Page */
+
+#im {
+  background-color: #AF0B23;
+}
+
+/* 5th Page */
+
+#he {
+  background-color: #673AB7;
+}
+
+/* 6th Page */
+
+#bw {
+  background-color: #000;
+}

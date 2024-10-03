@@ -1,0 +1,127 @@
+@import url(https://db.onlinewebfonts.com/c/1c034a3c79b7bb221891bf22588b450d?family=Avengeance+Heroic+Avenger+Normal);
+
+/* Common CSS */
+.min-h {
+    min-height: 100vh;
+}
+
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
+    font-family: "Avengeance Heroic Avenger Normal";
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #e0e055;
+    border-radius: 30px;
+}
+:root {
+    --page-height: calc(100vh - 7rem);
+}
+html {
+    scroll-behavior: smooth;
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height-step: 10px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
+.img-border {
+    border: 3px solid #e0e055;
+    border-radius: 10px;
+}
+header {
+    position: fixed;
+    z-index: 5;
+    background-color: #151515;
+    top: 2rem;
+    margin-left: 2rem;
+    width: calc(100% - 6rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 4rem;
+    border-radius: 100px;
+}
+#nav-links ul {
+    display: flex;
+    gap: 2.5rem;
+}
+#navi {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 2.5rem;
+}
+#nav-links ul li {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+#logo img {
+    width: 11rem;
+}
+
+/* 1st Page */
+#landing-page {
+    margin:4rem 5rem 0 5rem;
+    height: var(--page-height);
+}
+#first-container {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+}
+#loki-iframe {
+    width: 100%;
+    height: 60vh;
+}
+iframe {
+    border: 3px solid #e0e055;
+    border-radius: 20px;
+}
+
+/* 2nd Page */
+
+#loki-elop {
+    margin:4rem 5rem 0 5rem;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    gap: 10rem;
+    height: var(--page-height);
+}
+#loki-elop img {
+    width: 100%;
+    height: 60vh;
+    border: 3px solid #e0e055;
+    border-radius: 20px;
+}
+
+/* Third page */
+
+#battle-page {
+    margin:4rem 5rem 0 5rem;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 2rem;
+    height: var(--page-height);
+}
+#battle-page-iframe {
+    width: 100%;
+    height: 60vh;
+}
